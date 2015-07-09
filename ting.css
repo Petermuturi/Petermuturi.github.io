@@ -1,0 +1,20 @@
+*{
+  font-family: purisa;
+}
+
+div.container{
+	background-image: url("main.jpg");
+padding-top: 5px;
+background-position: center;
+}
+
+nav{
+  background-image:url("main.jpg");
+  background-position: bottom;
+  padding: 90px; 
+  background-size: 350px;
+  font-size: 10px;
+  color: white;
+  }
+
+  
