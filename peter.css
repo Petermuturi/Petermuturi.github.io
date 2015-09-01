@@ -1,17 +1,13 @@
-
-
-div.header{
-    background-image: url("images/background.gif");
-    background-position: center;
-   background-size: cover;
-  
+div.card{
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	box-shadow:9px 11px 9px #2AA347;
+	box-shadow:-8px -8px 9px #2AA347;
+	background-color: rgba(178, 138, 169, 0.5); 
 }
-
-div.container{
-padding-right: 20px;
-	width: 880px;
-}
-ul li{
-    display: inline;
-    text-align: center;
+body{
+	background-image: url("images/1.jpg");
+	position: center;
+	background-repeat: no-repeat;
 }
