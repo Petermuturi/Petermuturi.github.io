@@ -9,5 +9,6 @@ div.card{
 body{
 	background-image: url("images/1.jpg");
 	position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
