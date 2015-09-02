@@ -12,3 +12,6 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+img:hover{
+	height: 300px;
+}
