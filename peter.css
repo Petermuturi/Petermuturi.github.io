@@ -1,22 +1,12 @@
-div.card{
-	border-radius: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	box-shadow:9px 11px 9px #2AA347;
-	box-shadow:-8px -8px 9px #2AA347;
-	background-color: rgba(178, 138, 169, 0.5); 
+ul li{
+	display: inline; 
+	list-style: none;
 }
-body{
-	background-image: url("images/1.jpg");
-	position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-img:hover{
-	height: 300px;
+ul li a{
+	text-decoration: none;
+	color: white;
 }
 
-#test{
-	height: 20px;
-	width: 20px;
+ul li a:hover{
+ background-color: rgba(255, 255, 255, 0.5); 
 }
