@@ -15,10 +15,24 @@
 	$( document ).ready(function(){
 		$(".button-collapse").sideNav();
 		}) 
+  $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 </script>
 </head>
 <body>
-<div style="background-image:url(img/top.jpg); 
+<div id="home"style="background-image:url(img/top.jpg); 
 background-repeat:no-repeat;
 background-size:cover;">
 <div style="background-color:rgba(0,0,0,0.6);padding-bottom:100px;">
@@ -26,7 +40,7 @@ background-size:cover;">
   position:fixed; ">
 <div  class="nav-wrapper">
       <a href="#!" class="brand-logo">
-      <a  style="background-color:rgba(255, 255, 255, 0); padding-left:12px;" href="#">
+      <a  style="background-color:rgba(255, 255, 255, 0); padding-left:12px;" href="#home">
       <img src="img/logo.png"class="animated infinite pulse" title="Peter_Muturi" style="border-radius:100px;" height="60px" width="60px" />
       </a>
      <!-- web view -->
@@ -34,7 +48,7 @@ background-size:cover;">
       <a href="#" data-activates="mobile-demo" class="button-collapse">
       <i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-      <li><a  href="#">HOME</a></li>
+      <li><a  href="#home">HOME</a></li>
 				<li><a  href="#portfolio">PORTFOLIO</a></li>
 				<li><a  href="#bg">ABOUT</a></li>
 				<li><a  href="https://petermuturi.wordpress.com/"target="blog">BLOG</a></li>
@@ -44,7 +58,7 @@ background-size:cover;">
        <!-- mobile view -->
       <ul class="side-nav" id="mobile-demo" style="line-height:0.1px;background-color:rgba(0,0, 0, 0.5);">
         <li><a style="color:white;text-align:center;" href="#"> <img src="img/logo.png" title="Peter_Muturi" style="border-radius:100px;" height="60px" width="60px" /></a></li>
-        <li><a style="color:white;" href="#">HOME</a></li>
+        <li><a style="color:white;" href="#home">HOME</a></li>
 				<li><a style="color:white;" href="#portfolio">PORTFOLIO</a></li>
 				<li><a style="color:white;" href="#bg">ABOUT</a></li>
 				<li><a style="color:white;" href="https://petermuturi.wordpress.com/"target="blog">BLOG</a></li>
@@ -97,7 +111,7 @@ I love coming up with new ideas, and seeing other people also come up with new c
 
 <div style="padding-top:300px;">
   <p style="font-size:20px;"><b>Programming Analysis </p>
-  <p><b>Web Development=></b>HTML5, CSS3 JAVASCRIPT QUAERY, RUBY ON RAILS</p>
+  <p><b>Web Development=></b>HTML5, CSS3 JAVASCRIPT JQUERY, RUBY ON RAILS</p>
   <p><b>Mobile Development=></b> JAVA, ANDROID</p>
   <p><b>  Database=></b>SQL, PARSE, FIREBASE  </p>
   <P><b>DESIGN=></b> PHOTOSHOP. </P>
