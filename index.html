@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 
-	<title>Peter_Muturi</title>
+  <title>Peter_Muturi</title>
 
-	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
+  <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
     <link rel="icon" type="image/png" href="img/logo.png"  />
     <link rel="stylesheet" type="text/css" href="peter.css"/>
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="animatecss-master/animate.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
-	$( document ).ready(function(){
-		$(".button-collapse").sideNav();
+  $( document ).ready(function(){
+    $(".button-collapse").sideNav();
       $('.parallax').parallax();
-		}) 
+    }) 
   $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -50,7 +50,6 @@
     showAxisLabels: true
   });
 });
-
 (function($) {
   
   var Radar = (function() {
@@ -106,7 +105,6 @@
       
       min = Math.floor(min);
       max = Math.ceil(max);
-
       var spacing = 20;
       
       for(var i = min; i <= max; i += this.settings.step) {
@@ -125,39 +123,7 @@
       var size = 0;
       for(var key in this.settings.values)
         size += 1;
-      <script type="text/javascript">
-  $(function(){
-  $('#chart1').radarChart({
-    size: [500, 400],
-    step: 1,
-    title: "Front-end",
-    values: {
-      "HTML5": 5,
-      "CSS3": 4.5,
-      "JavaScript": 4.1,
-      "Node.js": 3.5,
-      "jQuery": 4,
-     
-      "Photoshop": 4
-    },
-    showAxisLabels: true
-  });
-});
-
-(function($) {
-  
-  var Radar = (function() {
-    
-    function Radar(ele, settings) {
-      this.ele = ele;
-      this.settings = $.extend({
-        showAxisLabels: false,
-        title: "Untitled",
-        step: 1,
-        size: [300,300],
-        values: {},
-        color: [0,128,255]
-      },settings);
+      
       for(var i = 0; i < size; i += 1) {
         this.cxt.beginPath();
         this.cxt.moveTo(this.width / 2, this.height /2);
@@ -208,7 +174,6 @@
         var dist = Math.min(spacing * val, size * spacing);
         var x = that.width / 2 + Math.cos((Math.PI * 2) * (i / size)) * spacing * val;
         var y = that.height / 2 + Math.sin((Math.PI * 2) * (i / size)) * spacing * val;
-
         var textX = that.width / 2 + Math.cos((Math.PI * 2) * (i / size)) * spacing * val;
         var textY = that.height / 2 + Math.sin((Math.PI * 2) * (i / size)) * spacing * val * 1.5;
         
@@ -272,7 +237,6 @@
     showAxisLabels: true
   });
 });
-
 (function($) {
   
   var Radar = (function() {
@@ -328,7 +292,6 @@
       
       min = Math.floor(min);
       max = Math.ceil(max);
-
       var spacing = 20;
       
       for(var i = min; i <= max; i += this.settings.step) {
@@ -398,7 +361,6 @@
         var dist = Math.min(spacing * val, size * spacing);
         var x = that.width / 2 + Math.cos((Math.PI * 2) * (i / size)) * spacing * val;
         var y = that.height / 2 + Math.sin((Math.PI * 2) * (i / size)) * spacing * val;
-
         var textX = that.width / 2 + Math.cos((Math.PI * 2) * (i / size)) * spacing * val;
         var textY = that.height / 2 + Math.sin((Math.PI * 2) * (i / size)) * spacing * val * 1.5;
         
@@ -466,30 +428,30 @@ background-size:cover;">
       <i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
       <li><a  href="#home">HOME</a></li>
-				<li><a  href="#bg">ABOUT</a></li>
+        <li><a  href="#bg">ABOUT</a></li>
         <li><a  href="#portfolio">PORTFOLIO</a></li>
-				<li><a  href="https://petermuturi.wordpress.com/"target="blog">BLOG</a></li>
-				<li><a  href="#">RESUME</a></li>
-				<li><a  href="#">CONTACT</a></li>
+        <li><a  href="https://petermuturi.wordpress.com/"target="blog">BLOG</a></li>
+        <li><a  href="#">RESUME</a></li>
+        <li><a  href="#">CONTACT</a></li>
       </ul>
        <!-- mobile view -->
       <ul class="side-nav" id="mobile-demo" style="line-height:0.1px;background-color:rgba(0,0, 0, 0.5);">
         <li><a style="color:white;text-align:center;" href="#"> <img src="img/logo.png" title="Peter_Muturi" style="border-radius:100px;" height="60px" width="60px" /></a></li>
         <li><a style="color:white;" href="#home">HOME</a></li>
-				<li><a style="color:white;" href="#bg">ABOUT</a></li>
+        <li><a style="color:white;" href="#bg">ABOUT</a></li>
         <li><a style="color:white;" href="#portfolio">PORTFOLIO</a></li>
-				<li><a style="color:white;" href="https://petermuturi.wordpress.com/"target="blog">BLOG</a></li>
-				<li><a style="color:white;" href="#">RESUME</a></li>
-				<li><a style="color:white;" href="#">CONTACT</a></li>
+        <li><a style="color:white;" href="https://petermuturi.wordpress.com/"target="blog">BLOG</a></li>
+        <li><a style="color:white;" href="#">RESUME</a></li>
+        <li><a style="color:white;" href="#">CONTACT</a></li>
       </ul>
     </div>
   </nav>
   <!-- content -->
 <div style="padding-top:80px;text-align:center;">
-	<i><p class="animated fadeInDownBig" style="color:white;padding-bottom:45px;
-	 font-family:Times New Roman italic;
-	  font-style:oblique;
-	  font-size:44px; text-shadow:10px 10px 10px rgba(0,0,0,0.8);"><span style="font-size:54px;">Front-end developer</span><br/>with a passion for<br/><span style="font-size:27px;">web and mobile development</span></p></i>
+  <i><p class="animated fadeInDownBig" style="color:white;padding-bottom:45px;
+   font-family:Times New Roman italic;
+    font-style:oblique;
+    font-size:44px; text-shadow:10px 10px 10px rgba(0,0,0,0.8);"><span style="font-size:54px;">Front-end developer</span><br/>with a passion for<br/><span style="font-size:27px;">web and mobile development</span></p></i>
 
    <ul class="animated zoomIn" style=" padding-bottom:50px;"><li style="list-style:none; text-align:center;"><a class="contact" style="color:white; border:2px solid;padding:17px;padding-left27px;padding-right:17px;" href="#">CONTACT</a>
    <a href="#" style="color:#A8A5A5;">_</a><a href="#" style="color:#A8A5A5;">_</a><a href="#" style="color:#A8A5A5;">_</a><a class="contact" style="border:2px solid;padding:17px;padding-left27px;padding-right:17px; color:white;" href="#">RESUME</a>
@@ -499,9 +461,9 @@ background-size:cover;">
 <a style="padding-left:4px;padding-right:4px;" href="https://github.com/Petermuturi"target="github"><img title="github" style="height:35px;width:30px;" src="img/github-icon.png"></a>
 <a style="padding-left:4px;padding-right:4px;" href="#"target="skype"><img title="Skype Me" style="height:35px;width:30px;" src="img/Skype-icon.png"></a>
 <a style="padding-left:4px;padding-right:4px;" href="#" target="gmail"><img title="Gmail" style="height:35px;width:30px;" src="img/Gmail-icon.png"></a>
-	<a style="padding-left:4px;padding-right:4px;" href="https://www.facebook.com/peter.juspeter" target="fb"><img title="FaceBook" src="img/icn-facebook-intro.png"></a>
-	<a style="padding-left:4px;padding-right:4px;" href="https://twitter.com/Peter_Jus_Peter" target="twitter"><img title="Twitter" src="img/icn-twitter-intro.png"></a>
-	<a style="padding-left:4px;padding-right:4px;" href="https://plus.google.com/u/0/102496469592873603571/posts" target="google+"><img title="Google+" src="img/icn-gplus-intro.png"></a>
+  <a style="padding-left:4px;padding-right:4px;" href="https://www.facebook.com/peter.juspeter" target="fb"><img title="FaceBook" src="img/icn-facebook-intro.png"></a>
+  <a style="padding-left:4px;padding-right:4px;" href="https://twitter.com/Peter_Jus_Peter" target="twitter"><img title="Twitter" src="img/icn-twitter-intro.png"></a>
+  <a style="padding-left:4px;padding-right:4px;" href="https://plus.google.com/u/0/102496469592873603571/posts" target="google+"><img title="Google+" src="img/icn-gplus-intro.png"></a>
 </div>
   <p style="text-align:center;"><a href="#bg"><img class="animated infinite rubberBand" style=" opacity:0.7;height:60px;width:60px;" src="img/arrow-down-icon.png"></a></p>
 </div>
