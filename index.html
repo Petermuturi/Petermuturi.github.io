@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="peter.css"/>
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="animatecss-master/animate.css"/>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript">
   $( document ).ready(function(){
@@ -44,7 +46,7 @@
       "JavaScript": 4.1,
       "Node.js": 3.5,
       "jQuery": 4,
-     
+       "SASS": 3,
       "Photoshop": 4
     },
     showAxisLabels: true
@@ -409,63 +411,69 @@
 })(jQuery);
 </script>
 <!-- backend -->
+<script type="text/javascript">
+ $(document).scroll(function() {
+  var dHeight = $(this).height()-$(window).height();
+  if (dHeight >= $(this).scrollTop()) {
+    $('nav').css('background', 'rgba(53,145,204,' + $(this).scrollTop() / dHeight + ')');
+  }
+});
+</script>
 </head>
 <body>
 <div id="home"style="background-image:url(img/top.jpg); 
 background-repeat:no-repeat;
 background-size:cover;">
 <div style="background-color:rgba(0,0,0,0.6);padding-bottom:100px;">
-  <nav style="background-color: rgba(0, 0, 0, 0.6); 
+  <nav style="background-color: rgba(0, 0, 0, 0); 
   position:fixed; ">
 <div  class="nav-wrapper">
       <a href="#!" class="brand-logo">
-      <a  style="background-color:rgba(255, 255, 255, 0); padding-left:12px;" href="#home">
+      <a  style="background-color:rgba(0,0,0, 0); padding-left:12px;" href="#home">
       <img src="img/logo.png"class="animated infinite pulse" title="Peter_Muturi" style="border-radius:100px;" height="60px" width="60px" />
       </a>
-     <!-- web view -->
     </a>
+    <!-- web view -->
       <a href="#" data-activates="mobile-demo" class="button-collapse">
       <i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
       <li><a  href="#home">HOME</a></li>
         <li><a  href="#bg">ABOUT</a></li>
+         <li><a href="#analysis">ANALYSIS</a></li>
         <li><a  href="#portfolio">PORTFOLIO</a></li>
         <li><a  href="https://petermuturi.wordpress.com/"target="blog">BLOG</a></li>
-        <li><a  href="#">RESUME</a></li>
-        <li><a  href="#">CONTACT</a></li>
+        <li><a  href="CURRICULUM.pdf" target="cv">RESUME</a></li>
       </ul>
        <!-- mobile view -->
       <ul class="side-nav" id="mobile-demo" style="line-height:0.1px;background-color:rgba(0,0, 0, 0.5);">
         <li><a style="color:white;text-align:center;" href="#"> <img src="img/logo.png" title="Peter_Muturi" style="border-radius:100px;" height="60px" width="60px" /></a></li>
         <li><a style="color:white;" href="#home">HOME</a></li>
         <li><a style="color:white;" href="#bg">ABOUT</a></li>
+         <li><a style="color:white;" href="#analysis">ANALYSIS</a></li>
         <li><a style="color:white;" href="#portfolio">PORTFOLIO</a></li>
         <li><a style="color:white;" href="https://petermuturi.wordpress.com/"target="blog">BLOG</a></li>
-        <li><a style="color:white;" href="#">RESUME</a></li>
-        <li><a style="color:white;" href="#">CONTACT</a></li>
+        <li><a style="color:white;" href="CURRICULUM.pdf" target="cv">RESUME</a></li>
       </ul>
     </div>
   </nav>
   <!-- content -->
 <div style="padding-top:80px;text-align:center;">
-  <i><p class="animated fadeInDownBig" style="color:white;padding-bottom:45px;
-   font-family:Times New Roman italic;
-    font-style:oblique;
-    font-size:44px; text-shadow:10px 10px 10px rgba(0,0,0,0.8);"><span style="font-size:54px;">Front-end developer</span><br/>with a passion for<br/><span style="font-size:27px;">web and mobile development</span></p></i>
+  <p class="animated fadeInDownBig" style="color:white;padding-bottom:45px;
+    font-size:44px; text-shadow:10px 10px 10px rgba(0,0,0,0.8);font-weight:300;"><span style="font-weight:300;font-size:54px;">Front-end developer</span><br/>with a passion for<br/><span style="font-weight:200;font-size:27px;">web and mobile development</span></p>
 
    <ul class="animated zoomIn" style=" padding-bottom:50px;"><li style="list-style:none; text-align:center;"><a class="contact" style="color:white; border:2px solid;padding:17px;padding-left27px;padding-right:17px;" href="#">CONTACT</a>
-   <a href="#" style="color:#A8A5A5;">_</a><a href="#" style="color:#A8A5A5;">_</a><a href="#" style="color:#A8A5A5;">_</a><a class="contact" style="border:2px solid;padding:17px;padding-left27px;padding-right:17px; color:white;" href="#">RESUME</a>
-   <a href="#" style="color:#A8A5A5;">_</a><a href="#" style="color:#A8A5A5;">_</a><a href="#" style="color:#A8A5A5;">_</a><a class="contact" style="border:2px solid;padding:17px;padding-left27px;padding-right:17px; color:white;" href="#">HIRE ME</a></li></ul>
+   <a href="#" style="color:#A8A5A5;">_</a><a href="#" style="color:#A8A5A5;">_</a><a href="#" style="color:#A8A5A5;">_</a><a class="contact" style="border:2px solid;padding:17px;padding-left27px;padding-right:17px; color:white;" href="CURRICULUM.pdf" target="cv">RESUME</a></li></ul>
 </div>
 <div style="text-align:center;padding-top:12px; padding-bottom:34px;">
-<a style="padding-left:4px;padding-right:4px;" href="https://github.com/Petermuturi"target="github"><img title="github" style="height:35px;width:30px;" src="img/github-icon.png"></a>
-<a style="padding-left:4px;padding-right:4px;" href="#"target="skype"><img title="Skype Me" style="height:35px;width:30px;" src="img/Skype-icon.png"></a>
-<a style="padding-left:4px;padding-right:4px;" href="#" target="gmail"><img title="Gmail" style="height:35px;width:30px;" src="img/Gmail-icon.png"></a>
-  <a style="padding-left:4px;padding-right:4px;" href="https://www.facebook.com/peter.juspeter" target="fb"><img title="FaceBook" src="img/icn-facebook-intro.png"></a>
-  <a style="padding-left:4px;padding-right:4px;" href="https://twitter.com/Peter_Jus_Peter" target="twitter"><img title="Twitter" src="img/icn-twitter-intro.png"></a>
-  <a style="padding-left:4px;padding-right:4px;" href="https://plus.google.com/u/0/102496469592873603571/posts" target="google+"><img title="Google+" src="img/icn-gplus-intro.png"></a>
+<a title="Github" style="padding-left:4px;padding-right:4px;" href="https://github.com/Petermuturi"target="github"><i class="fa fa-github-square"></i></a>
+<a title="LinkedIn" style="padding-left:4px;padding-right:4px;" href="https://ke.linkedin.com/pub/peter-muturi/aa/320/a16"target="linkedin"><i class="fa fa-linkedin-square"></i></a>
+<a title="Skype" style="padding-left:4px;padding-right:4px;" href="#"target="skype"><i class="fa fa-skype"></i></a>
+<a title="Gmail" style="padding-left:4px;padding-right:4px;" href="#" target="gmail"><i class="fa fa-envelope"></i></a>
+<a title="Facebook" style="padding-left:4px;padding-right:4px;" href="https://www.facebook.com/peter.juspeter" target="fb"><i class="fa fa-facebook-square"></i></a>
+  <a title="Twitter" style="padding-left:4px;padding-right:4px;" href="https://twitter.com/Peter_Jus_Peter" target="twitter"><i class="fa fa-twitter-square"></i></a>
+  <a title="Google+" style="padding-left:4px;padding-right:4px;" href="https://plus.google.com/u/0/102496469592873603571/posts" target="google+"><i class="fa fa-google-plus-square"></i></a>
 </div>
-  <p style="text-align:center;"><a href="#bg"><img class="animated infinite rubberBand" style=" opacity:0.7;height:60px;width:60px;" src="img/arrow-down-icon.png"></a></p>
+  <p style="text-align:center;font-size:35px;"><a href="#bg"><i class="fa fa-arrow-circle-down"></i></a></p>
 </div>
 </div>
 <!-- end of first container... -->
@@ -486,24 +494,24 @@ background-image: linear-gradient(to bottom, rgb(237, 237, 237) 0%, rgb(255, 255
 <p style="font-size:35px;"><b> Who Am <img src="img/about.png" style="height:40px;width:40px;"></b></p>
 <hr style="width:800px; color:rgba(0,0,0,0.4);" />
 <div class="animated tada" style="text-align:center;font-family:Helevitica; padding-bottom:50px; padding-top:20px; ">
-    <p style="font-weight:590;font-size:30px;">A Brief Background</p>
+    <p style="font-weight:590;font-size:20px;">A Brief Background</p>
 <p>My interest in web development stemmed from my passion for gaming. Between developing<br/> websites and playing video games, I admittedly spend most of my time in front of a screen. <br/>Some of my passions are writing clean code, creating sexy user experiences and filling up a <br/>fresh cup of coffee.</p>
   </div>
 <div class="col s6" >
 <img src="img/smile.jpeg"style="height:30px;width:30px;">
 <p class="animated flipInX">
-I love Mocca coffee, I enjoy overthinking at times, my favorite number is 24,  I play<br/> video games like it's my life, I knew what I wanted to do at the age of 14, I love Dancing, my favorite junk food is pizza and I don't mind working under pressure.</p>
+I love Mocca coffee, I enjoy overthinking at times, my favorite number<br/> is 24,  I play video games like it's my life, I knew what I wanted to do at<br/> the age of 14, I love Dancing, my favorite junk food is pizza<br/> and I don't mind working under pressure.</p>
 </div>
 <div class="col s6">
 <img src="img/message.png"style="height:30px;width:30px;">
  
 <p class="animated flipInX">
-I love coming up with new ideas, and seeing other people also come up with new creative ideas. I love what I create and I create out of Passion. I am not a fan of procrastination.I always put God first in Everything.</p>
+I love coming up with new ideas, and seeing other people also come up<br/> with new creative ideas. I love what I create and I create out of Passion.<br/> I am not a fan of procrastination.I always put God first in Everything.</p>
 </div>
 
-<div style="padding-top:300px;" class="row">
-  <p style="font-size:30px;"><b>Programming Analysis</b><br/></p>
-
+<div style="padding-top:220px;" class="row">
+  <p style="font-size:20px;padding-top:80px;"id="analysis">PROGRAMMING ANALYSIS<br/></p>
+       <p style="text-align:center;"><i>Key:=> The following is  a radar chart of scale 0 to 5 on each field.</i></p>
   <div id="chart1" class="col s6"></div>
   <div id="chart2" class="col s6"></div>
 </div>
@@ -522,8 +530,9 @@ background-image: -moz-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(176, 1
 background-image: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);
 background-image: -ms-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);
 background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(176, 176, 176) 100%);">
-<p style="text-align:center;font-family:Helevetica;font-size:30px;padding-top:55px;">My latest projects</p>
+<p style="text-align:center;font-size:20px;padding-top:65px;">MY LATEST PROJECTS</p>
   <hr style="width:800px; color:rgba(0,0,0,0.4);" />
+  
   <div class="row" style="padding-top:9px;">
    <div class="col s3">
       <li style="list-style:none;"><a  href="http://boltNetwork.bitballoon.com" target="bolt"><img style="border-radius:20px;opacity:6;" src="img/boltNetwork.png" height="200" width="300"></a></li>
@@ -545,15 +554,14 @@ background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(176, 176
 
   </div>
   <hr style="width:800px; color:rgba(0,0,0,0.4);" />
-  <p style="text-align:center;font-family:Arial;font-size:14px;padding-bottom:52px;">These are example Dummy-Websites using Materialize and Bootstrap as framework.<br/>Looking for someone to help you get started with Squarespace or<br/> need some design help on your already existing Squarespace site?</p>
-<li style="list-style:none; text-align:center;padding-bottom:50px;"><a class="contact" style="color:white;background-color:rgba(0,0,0,0.6); border:2px solid;padding:17px;padding-left27px;padding-right:17px;" href="#">Hire Me Today</a></li>
-</div>
+  
+
 
 <!-- end of projects -->
 <footer style="background-color:rgba(0,0,0,0.8);">
   <div style="text-align:center;padding-top:9px ">
     <p style="padding-bottom:22px; color:white;">Peter<img class="animated infinite pulse" src="img/logo.png" style="border-radius:50px;height:70px; width:70px;">Muturi</p>
-    <li style="list-style:none; text-align:center;padding-bottom:50px;"><a class="contact" style="color:white;background-color:rgba(0,0,0,0.6); border:2px solid;padding:17px;padding-left27px;padding-right:17px;" href="#">Hire Me Today</a></li>
+   
   </div>
   <p style="color:white; text-align:center;padding-bottom:40px;">&#169;Copyright 2015<br/>
   Designed By PeterMuturi<br/> Web And Mobile Developer Online Portfolio.<br/> All Rights Reserved.</p>
