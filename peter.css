@@ -31,3 +31,25 @@ ul li a:hover{
 	padding-right:12px;  
 
 }
+.cnt{
+	float:left;border-radius:100px; text-shadow:10px 30px 30px white; height:200px; width:200px;
+}
+
+@media screen and (max-width: 30em) {
+
+   .hid{
+	display: none;
+  }
+  .cnt{
+   height: 150px;
+   width: 150px;
+   margin-bottom: -40px;
+   float: right;
+  }
+  .up{
+  	padding-left: 30px;
+  	padding-right: 30px;
+  	margin-left: -20px;
+  	margin-top: 50px;
+  }
+}
