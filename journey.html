@@ -33,7 +33,53 @@
   });
 });
 </script>
+<script type="text/javascript">
+  function form(){
+       var name = document.contactForm.name;
+    var email = document.contactForm.email;
+    var phone = document.contactForm.phone;
+    var message = document.contactForm.message;
 
+    if (name.value == "")
+    {
+        window.alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+     if ((isNaN(phone.value)) || (phone.value == ""))
+    {
+        window.alert("Please enter your phone number.");
+        phone.focus();
+        return false;
+    }
+    if (email.value == "")
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf("@", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf(".", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+
+    if (message.value == "")
+    {
+        window.alert("Please provide a message.");
+        message.focus();
+        return false;
+    }
+    return true;
+}
+</script>
 <script type="text/javascript">
   $(function(){
   $('#chart1').radarChart({
@@ -445,7 +491,7 @@ background-size:cover;">
         <li><a  href="CURRICULUM.pdf" target="cv">RESUME</a></li>
       </ul>
        <!-- mobile view -->
-      <ul class="side-nav" id="mobile-demo" style="line-height:0.1px;background-color:rgba(0,0, 0, 0.5);">
+      <ul class="side-nav" id="mobile-demo" style="line-height:0.1px;background-color:black;">
         <li><a style="color:white;text-align:center;" href="#"> <img src="img/logo.png" title="Peter_Muturi" style="border-radius:100px;" height="60px" width="60px" /></a></li>
         <li><a style="color:white;" href="#home">HOME</a></li>
         <li><a style="color:white;" href="#bg">ABOUT</a></li>
@@ -526,7 +572,7 @@ I love coming up with new ideas, and seeing other people also come up<br/> with 
    <div class="col s3" style="color:white;">.</div>
    <div class="col s6">
       <form action="//formspree.io/pmuturi65@gmail.com"
-          method="POST"  >
+          method="POST" onsubmit="return form();" name="contactForm" >
           <p style="font-size:20px; text-align:center;">CONTACT ME NOW.</p>
           <div class="input-field col s12">
           <input id="first_name" type="text" name="name" class="validate">
