@@ -46,7 +46,7 @@
         name.focus();
         return false;
     }
-     if ((isNaN(phone.value)) || (phone.value == "") || (phone.value < 10))
+     if ((isNaN(phone.value)) || (phone.value == "") || (phone.value !== 10))
     {
         window.alert("Please enter your phone number.");
         phone.focus();
