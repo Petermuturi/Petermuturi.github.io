@@ -38,7 +38,7 @@ ul li a:hover{
 	margin-left: -100px;
 }
  @media screen and (max-width: 30em) {
- 
+  
   .hid{
 	display: none;
   }
