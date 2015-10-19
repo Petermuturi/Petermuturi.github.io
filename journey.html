@@ -4,7 +4,6 @@
 <meta charset="UTF-8" />
 
   <title>Peter_Muturi</title>
-
   <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
     <link rel="icon" type="image/png" href="img/logo.png"  />
     <link rel="stylesheet" type="text/css" href="peter.css"/>
@@ -83,7 +82,7 @@
 <script type="text/javascript">
   $(function(){
   $('#chart1').radarChart({
-    size: [450, 400],
+    size: [450, 350],
     step: 1,
     title: "Front-end",
     values: {
@@ -109,7 +108,7 @@
         showAxisLabels: false,
         title: "Untitled",
         step: 1,
-        size: [300,300],
+        size: [500,400],
         values: {},
         color: [0,128,255]
       },settings);
@@ -274,7 +273,7 @@
 <script type="text/javascript">
   $(function(){
   $('#chart2').radarChart({
-    size: [500, 400],
+    size: [420, 300],
     step: 1,
     title: "Back-end",
     values: {
@@ -467,7 +466,7 @@
 });
 </script>
 </head>
-<body>
+<body style="background-color:white;">
 <div id="home"style="background-image:url(img/top.jpg); 
 background-repeat:no-repeat;
 background-size:cover;">
@@ -560,11 +559,11 @@ I love coming up with new ideas, and seeing other people also come up<br/> with 
     <div class="parallax"style="text-align:center;"><img src="img/book.jpg"></div>
   </div>
 
-<div style="text-align:center;padding-bottom:80px;" class="row" >
+<div style="text-align:center;padding-bottom:80px;" class="row chart">
   <p style="font-size:20px;padding-top:80px;"id="analysis">PROGRAMMING ANALYSIS<br/></p>
        <p style="text-align:center;"><i>Key:=> The following is  a radar chart of scale 0 to 5 on each field.</i></p>
   <div id="chart1" class="col s6"></div>
-  <div id="chart2" class="col s6"></div>
+  <div id="chart2" class="col s3"></div>
 </div>
 <!-- end of me -->
   <hr style="width:800px; color:rgba(0,0,0,0.4);" />
@@ -603,14 +602,14 @@ Message*</label>
 </div>
 
 <!-- end of projects -->
-<footer style="background-color:rgba(0,0,0,0.8);">
+<div style="background-color:rgba(0,0,0,0.8);padding-bottom:1px;">
   <div style="text-align:center;padding-top:9px ">
     <p style="padding-bottom:22px; color:white;">Peter<img class="animated infinite pulse" src="img/logo.png" style="border-radius:50px;height:70px; width:70px;">Muturi</p>
    
   </div>
   <p style="color:white; text-align:center;padding-bottom:40px;">&#169;Copyright 2015<br/>
   Designed By PeterMuturi<br/> Web And Mobile Developer Online Portfolio.<br/> All Rights Reserved.</p>
-</footer>
+</div>
 <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 </body>
 </html>

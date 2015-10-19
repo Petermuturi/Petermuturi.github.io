@@ -34,10 +34,12 @@ ul li a:hover{
 .cnt{
 	float:left;border-radius:100px; text-shadow:10px 30px 30px white; height:200px; width:200px;
 }
-
-@media screen and (max-width: 30em) {
-
-   .hid{
+.chart{
+	margin-left: -100px;
+}
+ @media screen and (max-width: 30em) {
+ 
+  .hid{
 	display: none;
   }
   .cnt{
