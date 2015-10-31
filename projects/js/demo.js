@@ -46,11 +46,11 @@ var demo = (function(window, undefined) {
     var pattern = Trianglify({
       width: window.innerWidth,
       height: window.innerHeight,
-      cell_size: 60,
-      variance: 0.1,
-      stroke_width: 1,
+      cell_size: 90,
+      variance: 1,
+      stroke_width: 0.6,
       color_function : function(x, y) {
-        return 'rgba(53,145,204,1);';
+        return '#de6551';
       }
     }).svg(); // Render as SVG.
 

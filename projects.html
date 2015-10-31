@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" >
 
 <head>
 	<meta charset="UTF-8" />
@@ -7,27 +7,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portfolio</title>
     <link rel="icon" type="image/png" href="img/logo.png"  />
+     <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="animatecss-master/animate.css"/>
-	<link rel="stylesheet" type="text/css" href="projects/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="projects/fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="projects/css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="projects/css/card.css" />
-	<link rel="stylesheet" type="text/css" href="projects/css/pattern.css" />
 
-	<!--[if IE]>
-	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<script>
-	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-		var root = document.getElementsByTagName('html')[0];
-		root.setAttribute('class', 'ff');
-	};
-	</script>
 </head>
 <body style="background-image:url(img/bl.jpg);">
+<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/me.jpg"height="200px" width="200px">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
 
-			<!-- trianglify pattern container -->
+			
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+
+</html>
+<!-- trianglify pattern container -->
 			<div class="pattern pattern--hidden"></div>
 			<!-- cards -->
 			<div class="wrapper">
@@ -184,12 +189,3 @@
 				</div>
 			</div>
 			<!-- /cards -->
-	<script src="projects/js/vendors/trianglify.min.js"></script>
-	<script src="projects/js/vendors/TweenMax.min.js"></script>
-	<script src="projects/js/vendors/ScrollToPlugin.min.js"></script>
-	<script src="projects/js/vendors/cash.min.js"></script>
-	<script src="projects/js/Card-circle.js"></script>
-	<script src="projects/js/demo.js"></script>
-</body>
-
-</html>
