@@ -10,7 +10,7 @@
       "Node.js": 4,
       "jQuery": 4,
        "SASS": 3,
-       "Express.js": 3.5,
+       "Angular.js": 3.5,
       "Photoshop": 4
     },
     showAxisLabels: true
