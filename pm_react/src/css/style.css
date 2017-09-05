@@ -3,3 +3,107 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 5s linear;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+/*main*/
+#main-sect {
+  background-image: url('../assets/img.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+.overlay {
+  background-color: rgba(0,0,0,0);
+  height: 100%;
+}
+.pattern-overlay {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQYV2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBX45Xb8AAAAASUVORK5CYII=') repeat;
+  height: 100%;
+}
+.right {
+  float: right;
+  text-align: right;
+  margin-right: 8vw;
+  max-width: 400px;
+  padding-top: 120px;
+  font-size: 20px;
+  font-weight: 100;
+  color: #333;
+}
+.hi {
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+}
+.right a {
+  color: #333 !important;
+  padding-bottom: 2px;
+  text-decoration: none !important;
+  border-bottom: 2px dashed #333;
+}
+.right a:hover{
+  border-bottom: 2px solid #333;
+}
+.right sup {
+  font-size: 12px;
+}
+.form-control {
+  border: 2px dashed #666;
+  height: 50px;
+  font-size: 20px;
+  width: 300px;
+  float: right;
+}
+a.send {
+  margin-top: 20px;
+  width: 200px;
+  color: #fff !important;
+  font-size: 20px;
+  font-family: 'Pacifico', cursive;
+  background: #9d2424;
+  border: 2px dashed #9d2424 !important;
+}
+a.send:hover, .send:focus {
+  background-color: #ffffff;
+  color: #9d2424 !important;
+}
+
+
+@media (max-width:1024px) {
+  #main-sect {
+    background-size: cover;
+    background-position: center;
+  }
+  .form-control {
+    border:none;
+  }
+  .overlay {
+    background-color: rgba(0,0,0,0.5);
+  }
+  .right {
+    padding-top: 100px;
+    margin-right: 5vw;
+  }
+  .right, .right a, .right a:hover {
+    color: #fff !important;
+    border-color: #fff;
+  }
+}
+@media (max-width:500px) {
+  #main-sect {
+    height: 700px
+  }
+}
+
+/*survey*/
+.top {
+  height: 600px;
+}
