@@ -1,8 +1,8 @@
 {
   "name": "pm",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://petermuturi.github.io",
+  "private": true,
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
