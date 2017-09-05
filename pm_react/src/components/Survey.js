@@ -67,7 +67,7 @@ export default ({bnw, setBnW}) => {
       <div className='coffee'>
         <p className='header'>Let's have a Chat!</p>
         <p className='form-title'>So {bnw.name}, having had a glimps of my persepctive toward programming art, <br/>please feel free to keep in touch by <a href="mailto:me@petermuturi.xyz" target="mail">emailing</a> me:)</p>
-        <p><a>Previous Version! <sup>(my genesis)</sup></a></p>
+        <p><a href="old.html">Previous Version! <sup>(my genesis)</sup></a></p>
         <div className="icons">
           <table>
             <tbody>
