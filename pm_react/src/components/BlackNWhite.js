@@ -11,7 +11,7 @@ export default ({bnw, setBnW}) => {
   }
   return (
     <div>
-      <div id='main-sect' className={!bnw.submitName ? 'hidden' : 'visible'}>
+      <div id='main-sect' className={bnw.submitName ? 'hidden' : 'visible'}>
         <div className="overlay">
           <div className="pattern-overlay">
             <div className="right">
@@ -32,7 +32,7 @@ export default ({bnw, setBnW}) => {
           </div>
         </div>
       </div>
-      <div className={bnw.submitName ? 'hidden' : 'visible'}>
+      <div className={!bnw.submitName ? 'hidden' : 'visible'}>
           <SurveyContainer/>
       </div>
     </div>
