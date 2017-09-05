@@ -171,3 +171,45 @@ a.send:hover, .send:focus {
   color: #fff;
   font-family: 'Pacifico', cursive;
 }
+.coffee p {
+  text-align: center;
+}
+.form-title {
+  text-align: center;
+  font-size: 20px;
+}
+.icons {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+code {
+  background-color: #eee;
+  padding: 5px;
+  border-top: 2px dashed #9d2424 !important;
+}
+.icons i {
+  color: #333;
+  font-size: 20px;
+  padding: 5px;
+}
+#triangle {
+  fill: #fff;
+}
+#stars {
+  background-image: url('../assets/stars.jpg');
+  height: 200px;
+  background-attachment: fixed;
+}
+.foot {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  padding-top: 50px;
+}
+.foot a {
+  text-decoration: underline;
+  color: #fff;
+}

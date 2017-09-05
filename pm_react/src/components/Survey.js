@@ -38,7 +38,7 @@ export default ({bnw, setBnW}) => {
   			</svg>
       </div>
       <div className='second-section animated fadeIn'>
-        <p className='header animated'>The Language of Art</p>
+        <p className='header'>The Language of Art</p>
         <div className="container">
           <div className="row">
             <div className="col-xs-6 animated">
@@ -64,8 +64,46 @@ export default ({bnw, setBnW}) => {
           </div>
         </div>
       </div>
-      <div>
-        <p></p>
+      <div className='coffee'>
+        <p className='header'>Let's have a Chat!</p>
+        <p className='form-title'>So {bnw.name}, having had a glimps of my persepctive toward programming art, <br/>please feel free to keep in touch by <a href="mailto:me@petermuturi.xyz" target="mail">emailing</a> me:)</p>
+        <p><a>Previous Version! <sup>(my genesis)</sup></a></p>
+        <div className="icons">
+          <table>
+            <tbody>
+              <tr>
+                <td><i className="fa fa-skype"/></td>
+                <td><code>@pemuma14</code></td>
+              </tr>
+              <tr>
+                <td><i className="fa fa-instagram"/></td>
+                <td><code>@peter_muturi</code></td>
+              </tr>
+              <tr>
+                <td><i className="fa fa-github"/></td>
+                <td><code>https://github.com/Petermuturi</code></td>
+              </tr>
+              <tr>
+                <td><i className="fa fa-linkedin"/></td>
+                <td><code>https://linkedin.com/in/peter-muturi</code></td>
+              </tr>
+              <tr>
+                <td><i className="fa fa-facebook"/></td>
+                <td><code>https://www.facebook.com/peter.juspeter</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="stars">
+        <div className="deep-overlay">
+          <div className="pattern-overlay">
+            <svg id="triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+                <path d="M0 0 L50 100 L100 0 Z"></path>
+            </svg>
+            <p className="foot">Made with Love. By <a href="https://github.com/PeterMuturi" target='git'>Me!</a></p>
+          </div>
+        </div>
       </div>
     </div>
   )
